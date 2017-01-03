@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="horizontal" >
+
+<LinearLayout
+    android:id="@+id/item_left"
+    android:layout_height="fill_parent"
+	android:layout_width="fill_parent"
+	android:layout_weight="1"
+	android:background="@android:color/black"
+    android:orientation="vertical" >
+    <FrameLayout  
+        android:layout_width="fill_parent"  
+        android:layout_height="fill_parent" 
+        android:layout_weight="1">  
+<SurfaceView
+	    android:layout_width="fill_parent"
+	    android:layout_height="fill_parent"
+	    
+	    android:id="@+id/surefaceView"
+	    
+	    />
+	<com.lqd.camera.DrawRectImageView  
+             android:id="@+id/drawRect"  
+             android:layout_width="fill_parent"  
+             android:layout_height="fill_parent"  
+            /> 
+	</FrameLayout>
+
+<LinearLayout 
+    android:id="@+id/menubar"
+    android:layout_width="fill_parent"
+    android:layout_height="160dp"
+    android:background="#cccccc" 
+    android:orientation="vertical"
+    android:useDefaultMargins="true"
+>
+	<TextView
+        android:id="@+id/txtInfo"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:textSize="16sp"
+        android:text="个人详细信息" >
+        <requestFocus />
+    </TextView>
+	<LinearLayout 
+	    android:layout_width="fill_parent"
+	    android:layout_height="fill_parent"
+	    android:orientation="horizontal">
+        <LinearLayout 
+            android:layout_width="match_parent"
+        	android:layout_weight="3"
+        	android:layout_height="fill_parent"
+        	android:gravity="center"
+            >
+            <Button  
+        android:id="@+id/getPhoto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/photo_button"
+        android:onClick="btnGetPhotoClick" 
+        
+        />
+            
+        </LinearLayout>
+	    
+	    <LinearLayout 
+	        android:layout_width="match_parent"
+	        android:layout_height="fill_parent"
+	    	android:orientation="vertical"
+	    	android:layout_weight="4"
+	    	android:gravity="center"
+	        >
+	        <Button
+                        android:id="@+id/btnPrior"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/prior_button"
+                        android:onClick="btnPriorClick" />
+	        <Button
+                        android:id="@+id/btnNext"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/next_button"
+                        android:onClick="btnNextClick" />
+	        
+	    </LinearLayout>
+	    
+	    <LinearLayout 
+	        android:layout_width="match_parent"
+	        android:layout_height="fill_parent"
+	    	android:orientation="vertical"
+	    	android:layout_weight="5"
+	    	android:gravity="center"
+	        >
+	        <CheckBox
+                        android:id="@+id/sgd"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/btn_check"
+                        android:button="@null"
+                        android:checked="false"
+                        android:layout_marginBottom="40dp"
+                        android:layout_marginRight="5dp"
+                        android:onClick="sgdClick" />
+
+                    <CheckBox
+                        android:id="@+id/eye"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/btn_eye"
+                        android:button="@null"
+                        android:checked="false"
+                        android:layout_marginRight="5dp"
+                        android:onClick="eyeClick" />
+
+	        </LinearLayout>
+	    
+	</LinearLayout>
+    
+    
+</LinearLayout>    
+  </LinearLayout>      
+<LinearLayout
+    android:id="@+id/item_right"
+    android:layout_width="100dp"
+    android:layout_height="fill_parent"
+    android:layout_toRightOf="@id/item_left"
+    
+    android:orientation="vertical" >
+ <Spinner
+        android:id="@+id/spinner_unit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <ListView
+        android:id="@+id/lvStudentList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+    </ListView>
+</LinearLayout>
+    
+</LinearLayout>

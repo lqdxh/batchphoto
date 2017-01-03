@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/suguest_l"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/layout_suguest_label1" />
+
+    <EditText
+        android:id="@+id/suguest_e"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_margin="10dp"
+        android:background="@drawable/bg_edittext"
+        android:ems="10"
+        android:gravity="left|top"
+        android:inputType="textMultiLine"
+        android:minLines="5"
+        android:paddingBottom="0dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:maxLength="100"
+        android:paddingTop="0dp" >
+
+        <requestFocus />
+    </EditText>
+
+</LinearLayout>

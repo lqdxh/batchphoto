@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.lqd.camera"
+    android:versionCode="22"
+    android:versionName="5.7"
+     >
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="14" />
+
+    
+     <uses-permission android:name="android.permission.CAMERA"></uses-permission>    
+     <uses-feature android:name="android.hardware.camera.autofocus" />    
+    <uses-feature android:name="android.hardware.camera" />   
+    <uses-permission android:name="android.permission.FLASHLIGHT"/> 
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>   
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.READ_LOGS"/>
+	<uses-permission android:name="android.permission.GET_TASKS"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK" /> 
+    
+    
+    <application
+        
+        android:allowBackup="false"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.lqd.camera.MainActivity"
+            android:label="@string/app_name" 
+             android:screenOrientation="portrait">
+           <!--   android:screenOrientation="portrait"  -->
+            
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".SetupActivity" android:label="@string/action_settings" android:exported="false" ></activity>
+        <activity android:name=".HelpActivity" android:label="@string/action_help" android:exported="false"></activity>
+        <activity android:name=".EditTextActivity" android:label="@string/edittxt_txt" android:exported="false"></activity>
+        <!-- 设置AppKey -->
+        <meta-data android:name="TESTIN_APPKEY" android:value="19c009e02bf9b17814e0a12c0bce3699"/>
+        <!-- 设置渠道信息 -->
+        <meta-data android:name="TESTIN_CHANNEL" android:value="360"/>
+    </application>
+
+    
+</manifest>

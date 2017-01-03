@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" 
+    android:padding="20dp">
+
+    <TextView
+        android:id="@+id/poto_l_devtype"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:textSize="16sp"
+        android:layout_weight="5"
+        android:text="@string/layout_devtype_label1" />
+    <RadioGroup 
+        android:id="@+id/radioGroup" 
+        android:layout_width="wrap_content" 
+        android:layout_height="wrap_content" 
+        android:layout_marginTop="18dp"
+        android:layout_marginBottom="20dp"
+        android:orientation="horizontal">
+     <RadioButton android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/radioPhone" android:text="@string/layout_devtype_label2" android:checked="true"></RadioButton>
+     <RadioButton android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/radioTablet" android:text="@string/layout_devtype_label3"></RadioButton>    
+  </RadioGroup>
+
+
+
+</LinearLayout>

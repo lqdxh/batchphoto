@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Batch Photo</string>
+    <string name="action_settings">Setup</string>
+    <string name="action_help">User guide</string>
+    <string name="hello_world">Hello world!</string>
+	<string name="photo">Photo</string>
+	<string name="focus">Focus</string>
+	<string name="prior">Previous</string>
+	<string name="next">Next</string>
+	<string name="setup">Setup</string>
+	<string name="dataedit">Edit data</string>
+	<string name="version_name">Version:</string>
+	<string name="delPhotoConfirm">Are you sure to delete this photo?</string>
+	
+	
+	<string name="buttonEnter">Confirm</string>
+	<string name="buttonSave">Save</string>
+	<string name="buttonCancel">Cancel</string>
+	
+	<string name="noCamera"  formatted="false">Can not detect Camera!</string>
+	<string name="noSDCard"  formatted="false">have not SD card!</string>
+	<string name="noWriteFileAuthority"  formatted="false">Can not create test file,maybe have not  write authority of SD card,please allow!</string>
+	<string name="noCameraAuthority">Have not authority of Camera,please allow!</string>
+	<string name="testFileName">test</string>
+	<string name="testItemName">test</string>
+	
+	<string name="savePhotoSizeTitle">Save photo size(px)</string>
+	<string name="savePhotoSizeMsg"  formatted="false">The max height/width ratio is %1.1f in this phone, curren width:%-6d       height:%d</string>
+	<string name="savePhotoQualityTitle">The quality of saved photo</string>
+	<string name="savePhotoQualityMsg">The quality of saved photo</string>
+	<string name="saveBigPhotoTitle">Create big size photo file</string>
+	<string name="saveBigPhotoMsg">Current setup</string>
+	<string name="Yes">Yes</string>
+	<string name="No">No</string>
+	<string name="appValidTitle">Activate software</string>
+	<string name="appValidMsg">Activate status</string>
+	<string name="appValided">Activated</string>
+	<string name="appInvalided">Inactivated</string>
+	<string name="helpTitle">User guide</string>
+	<string name="helpMsg">Please click to see user guide</string>
+	<string name="suguestTitle">Feedback and suggest</string>
+	<string name="suguestMsg">If you have good idea or find bug in running,please tell us,thank you！</string>
+	<string name="noConnectTis">Have not network connection in this phone, please open WIFI or data link！</string>
+	<string name="photoSizeDlgTitle">Please enter saving photo size</string>
+	<string name="photoQualityDlgTitle">Please enter saving photo quality</string>
+	<string name="bigPhotoDlgTitle">Create big size photo file</string>
+	<string name="validAppDlgTitle">Please enter activate information</string>
+	<string name="webServerErr">Can not connect to server</string>
+	<string name="validAppDlgSuccess">Activate success！</string>
+	<string name="validAppDlgFail">Activate fail！maybe your phone Num have not register to server,please contact us。</string>
+	<string name="validAppDlgErrTis">Find some error，detail</string>
+	<string name="suguestDlgTitle">Please enter Feedback or suggest</string>
+	<string name="suguestDlgTis">Please enter content,thank you！</string>
+	<string name="suguestDlgSuccess">Submit success,thank you！</string>
+	<string name="suguestDlgFail">Submit fail, err info</string>
+	<string name="devType"  formatted="false">Current device type</string>
+	<string name="devTypeTitle">Choose device type</string>
+	
+	<string name="layout_detail_label">Person detail information</string>
+	<string name="layout_bigphoto_label1">Will save in directory which name is selected file name add "L":</string>
+	<string name="layout_photoquality_label">Photo quality(10~100):</string>
+	<string name="layout_photosize_label1">width:</string>
+	<string name="layout_photosize_label2">height:</string>
+	<string name="layout_suguest_label1">Please enter Feedback or suggest:</string>
+	<string name="layout_validsoft_label1">Register phone Num:</string>
+	<string name="layout_validsoft_label2">This phone SIM:</string>
+	<string name="layout_validsoft_label3">Please enter register phone Num</string>
+	<string name="layout_validsoft_label4">auto get</string>
+	<string name="layout_devtype_label1">Device Type</string>
+	<string name="layout_devtype_label2">Phone</string>
+	<string name="layout_devtype_label3">Tablet</string>
+	<string name="selectfile_l_txt">Select file:</string>
+	<string name="filecontent_l_txt">File content:</string>
+	<string name="edittxt_txt">Edit file</string>
+	<string name="savesuccess">Save success!</string>
+	<string name="savefail">Save fail!</string>
+	<string name="validTip">Please Activate,thank you!</string>
+	<string name="curBrightness">Brightness:</string>
+	<string name="curContrast">Contrast:</string>
+	<string name="photoparameter_txt">Camera setup</string>
+	<string name="setCameraTip">second later will get samples photo...</string>
+	<string name="layout_hidepotoed_l">Hide photoed item</string>
+	<string name="hidePhotoedTitle">Hide photoed item</string>
+	<string name="hidePhotoedMsg">Set this to YES can prevent override photoed item file and check have not photoed item,need restart software</string>
+</resources>

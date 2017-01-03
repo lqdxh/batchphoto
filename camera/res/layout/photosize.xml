@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" 
+    android:padding="20dp">
+
+    <TextView
+        android:id="@+id/potosize_l_width"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="20dp"
+        android:textSize="16sp"
+        android:text="@string/layout_photosize_label1" />
+
+    <TextView
+        android:id="@+id/potosize_l_height"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/potosize_l_width"
+        android:layout_below="@id/potosize_l_width"
+        android:layout_marginTop="16dp"
+        android:textSize="16sp"
+        android:text="@string/layout_photosize_label2" />
+
+    <EditText
+        android:id="@+id/potosize_e_width"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_edittext"  
+        android:layout_alignBaseline="@id/potosize_l_width"
+        android:layout_marginLeft="5dp"
+        android:padding="5dp"
+        android:textColorHint="#AAAAAA"  
+        android:singleLine="true"  
+    	android:textSize="16sp"
+        android:layout_toRightOf="@id/potosize_l_width"
+        android:inputType="number" >
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/potosize_e_height"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_edittext"  
+        android:padding="5dp"
+        android:textColorHint="#AAAAAA"  
+        android:singleLine="true"  
+        android:layout_alignBaseline="@id/potosize_l_height"
+        android:layout_alignLeft="@id/potosize_e_width"
+        android:textSize="16sp"
+        android:inputType="number" />
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/potosize_l_height"
+        android:layout_below="@+id/potosize_l_height"
+        android:layout_marginTop="10dp"
+        android:text="" />
+
+
+</RelativeLayout>

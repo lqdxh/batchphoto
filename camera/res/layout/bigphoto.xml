@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" 
+    android:padding="20dp">
+
+    <TextView
+        android:id="@+id/poto_l_bigphoto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:textSize="16sp"
+        android:layout_weight="5"
+        android:text="@string/layout_bigphoto_label1" />
+    <CheckBox
+        android:id="@+id/chkBigPhoto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="1"
+        android:text="" />
+
+
+
+</LinearLayout>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">批量拍照</string>
+    <string name="action_settings">参数设置</string>
+    <string name="action_help">使用说明</string>
+    <string name="hello_world">Hello world!</string>
+	<string name="photo">拍照</string>
+	<string name="focus">对焦</string>
+	<string name="prior">上一个</string>
+	<string name="next">下一个</string>
+	<string name="setup">设置</string>
+	<string name="dataedit">数据编辑</string>
+	<string name="version_name">版本：</string>
+	<string name="delPhotoConfirm">确定要删除这张相片吗?</string>
+	
+	<string name="buttonEnter">确定</string>
+	<string name="buttonSave">保存</string>
+	<string name="buttonCancel">取消</string>
+	
+	<string name="noCamera">当前检测不到相机！</string>
+	<string name="noSDCard">没有SD卡!</string>
+	<string name="noWriteFileAuthority">无法创建测试文件，可能没有内存卡读写权限，请允许！</string>
+	<string name="noCameraAuthority">没有获得拍照权限，请允许！</string>
+	<string name="testFileName">测试</string>
+	<string name="testItemName">测试</string>
+	
+	<string name="savePhotoSizeTitle">保存图像尺寸(px)</string>
+	<string name="savePhotoSizeMsg"  formatted="false">本机相片高度最大可为宽度的%1.1f倍，当前宽度:%-6d      高度:%d</string>
+	<string name="savePhotoQualityTitle">图像保存质量</string>
+	<string name="savePhotoQualityMsg">图像保存质量</string>
+	<string name="saveBigPhotoTitle">是否生成大图文件</string>
+	<string name="saveBigPhotoMsg">当前设置</string>
+	<string name="Yes">是</string>
+	<string name="No">否</string>
+	<string name="appValidTitle">软件激活</string>
+	<string name="appValidMsg">激活状态</string>
+	<string name="appValided">已激活</string>
+	<string name="appInvalided">未激活</string>
+	<string name="helpTitle">使用说明</string>
+	<string name="helpMsg">请点击了解软件使用说明</string>
+	<string name="suguestTitle">问题反馈及建议</string>
+	<string name="suguestMsg">如果在使用过程中发现软件有缺陷或有好建议请告诉我们，谢谢！</string>
+	<string name="noConnectTis">当前手机未打开网络，请先打开WIFI或者数据开关！</string>
+	<string name="photoSizeDlgTitle">请输入图像尺寸</string>
+	<string name="photoQualityDlgTitle">请输入图像保存质量</string>
+	<string name="bigPhotoDlgTitle">是否生成大图文件</string>
+	<string name="validAppDlgTitle">请输入激活信息</string>
+	<string name="webServerErr">无法访问服务器</string>
+	<string name="validAppDlgSuccess">软件激活成功！</string>
+	<string name="validAppDlgFail">软件激活失败！可能你的电话号码未加入注册服务器。</string>
+	<string name="validAppDlgErrTis">提交出错，原因</string>
+	<string name="suguestDlgTitle">请输入反馈意见</string>
+	<string name="suguestDlgTis">请输入内容，谢谢！</string>
+	<string name="suguestDlgSuccess">提交成功，谢谢！</string>
+	<string name="suguestDlgFail">提交出错，原因</string>
+	<string name="devType"  formatted="false">当前选择的设备类型是</string>
+	<string name="devTypeTitle">设备类型选择</string>
+	
+	<string name="layout_detail_label">个人详细信息</string>
+	<string name="layout_bigphoto_label1">将以文件名+L建立文件夹保存:</string>
+	<string name="layout_photoquality_label">图像质量(10~100):</string>
+	<string name="layout_photosize_label1">宽度:</string>
+	<string name="layout_photosize_label2">高度:</string>
+	<string name="layout_suguest_label1">请输入反馈意见:</string>
+	<string name="layout_validsoft_label1">注册手机号码:</string>
+	<string name="layout_validsoft_label2">本机SIM码:</string>
+	<string name="layout_validsoft_label3">请输入淘宝留言号码</string>
+	<string name="layout_validsoft_label4">自动获取</string>
+	<string name="layout_devtype_label1">设备类型</string>
+	<string name="layout_devtype_label2">手机</string>
+	<string name="layout_devtype_label3">平板</string>
+	<string name="selectfile_l_txt">选择文件：</string>
+	<string name="filecontent_l_txt">文件内容：</string>
+	<string name="edittxt_txt">编辑名单文件</string>
+	<string name="savesuccess">保存成功！</string>
+	<string name="savefail">保存失败！</string>
+	<string name="validTip">请注册使用，谢谢！</string>
+	<string name="curBrightness">亮    度：</string>
+	<string name="curContrast">对比度：</string>
+	<string name="photoparameter_txt">拍摄设置</string>
+	<string name="setCameraTip">秒后拍取样本相片...</string>
+	<string name="layout_hidepotoed_l">隐藏已拍对象列表</string>
+	<string name="hidePhotoedTitle">隐藏已拍对象列表</string>
+	<string name="hidePhotoedMsg">设置为“是”可防止覆盖已拍照片或查看未拍对象，需重启软件</string>
+</resources>

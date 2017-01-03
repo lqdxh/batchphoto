@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    
+<!-- 拍摄界面  -->       
+<LinearLayout
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="horizontal" >
+
+<LinearLayout
+    android:id="@+id/item_left"
+    android:layout_height="fill_parent"
+	android:layout_width="fill_parent"
+	android:layout_weight="1"
+	android:background="@android:color/black"
+    android:orientation="vertical" >
+    <FrameLayout  
+        android:layout_width="fill_parent"  
+        android:layout_height="fill_parent" 
+        android:layout_weight="1">  
+<SurfaceView
+	    android:layout_width="fill_parent"
+	    android:layout_height="fill_parent"
+	    
+	    android:id="@+id/surefaceView"
+	    
+	    />
+	<com.lqd.camera.DrawRectImageView  
+             android:id="@+id/drawRect"  
+             android:layout_width="fill_parent"  
+             android:layout_height="fill_parent"  
+            /> 
+            <com.lqd.facedetect.FaceView
+            android:id="@+id/face_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+	</FrameLayout>
+
+    
+    <FrameLayout
+    android:layout_width="fill_parent"  
+    android:layout_height="160dp" > 
+	<LinearLayout 
+	    android:id="@+id/menubar"
+	    android:layout_width="fill_parent"
+	    android:layout_height="fill_parent"
+	    android:background="#cccccc" 
+	    android:orientation="vertical"
+	    android:useDefaultMargins="true"
+	>
+            
+    <FrameLayout  
+        android:layout_width="fill_parent"  
+        android:layout_height="wrap_content" >  
+			<TextView
+		        android:id="@+id/txtInfo"
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        android:layout_margin="5dp"
+		        android:textSize="16sp"
+		        android:clickable="true"
+		        android:text="@string/layout_detail_label"
+		        android:onClick="showEdit"
+		        >
+		        <requestFocus />
+		    </TextView>
+		    
+			<EditText 
+    		    android:id="@+id/enterfilename"
+    		    android:layout_width="fill_parent"
+    		    android:layout_height="fill_parent"
+    		    android:background="@drawable/bg_edittext"  
+    		    android:layout_marginLeft="5dp"
+		        android:layout_marginRight="5dp"
+		        android:layout_marginBottom="5dp"
+		        android:padding="2dp"
+		        android:textColorHint="#AAAAAA"  
+		        android:singleLine="true"  
+		        android:textSize="16sp"
+		        android:visibility="gone"
+    		    />
+			
+    		
+	
+	</FrameLayout>
+	<LinearLayout 
+	    android:layout_width="fill_parent"
+	    android:layout_height="fill_parent"
+	    android:orientation="horizontal">
+        <LinearLayout 
+            android:layout_width="match_parent"
+        	android:layout_weight="3"
+        	android:layout_height="fill_parent"
+        	android:gravity="center"
+            >
+            <Button  
+        android:id="@+id/getPhoto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/photo_button"
+        android:onClick="btnGetPhotoClick" 
+        
+        />
+            
+        </LinearLayout>
+	    
+	    <LinearLayout 
+	        android:layout_width="match_parent"
+	        android:layout_height="fill_parent"
+	    	android:orientation="vertical"
+	    	android:layout_weight="4"
+	    	android:gravity="center"
+	        >
+	        <Button
+                        android:id="@+id/btnPrior"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/prior_button"
+                        android:onClick="btnPriorClick" />
+	        <Button
+                        android:id="@+id/btnNext"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/next_button"
+                        android:onClick="btnNextClick" />
+	        
+	    </LinearLayout>
+	    
+	    <LinearLayout 
+	        android:layout_width="match_parent"
+	        android:layout_height="fill_parent"
+	    	android:orientation="vertical"
+	    	android:layout_weight="5"
+	    	android:gravity="center"
+	        >
+	        <CheckBox
+                        android:id="@+id/sgd"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/btn_check"
+                        android:button="@null"
+                        android:checked="false"
+                        android:layout_marginBottom="40dp"
+                        android:layout_marginRight="5dp"
+                        android:onClick="sgdClick" />
+
+                    <CheckBox
+                        android:id="@+id/eye"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/btn_eye"
+                        android:button="@null"
+                        android:checked="false"
+                        android:layout_marginRight="5dp"
+                        android:onClick="eyeClick" />
+	        </LinearLayout>
+	</LinearLayout>
+	</LinearLayout>  
+	<RelativeLayout 
+	    android:layout_width="fill_parent"
+	    android:layout_height="fill_parent"
+	    android:background="#ffffff"
+	    android:padding="5dp"
+	    android:id="@+id/photoparameter"
+	    android:visibility="gone"
+	    android:orientation="vertical">
+		    <SeekBar android:id="@+id/duibidu" 
+		        android:layout_width="130dp"  
+		        android:layout_height="wrap_content" 
+		        android:paddingBottom="5dp" 
+		        android:paddingTop="5dp" 
+		        android:progress="0" 
+		        android:max="50"  
+		        android:secondaryProgress="0" />  
+	    	<TextView android:layout_width="wrap_content"  
+		        android:layout_height="wrap_content" 
+		        android:layout_toRightOf="@id/duibidu"
+		        android:layout_marginTop="10dp"
+		        android:id="@+id/duibidu_l" /> 
+	        <SeekBar android:id="@+id/liangdu" 
+	            android:layout_width="130dp"  
+		        android:layout_height="wrap_content" 
+		        android:layout_below="@id/duibidu"
+		        android:paddingTop="5dp"  
+		        android:paddingBottom="5dp" 
+		        android:progress="0" 
+		        android:max="50"  
+		        android:secondaryProgress="0" />  
+	    	<TextView android:layout_width="wrap_content"  
+		        android:layout_height="wrap_content" 
+		        android:layout_below="@id/duibidu"
+		        android:layout_alignLeft="@id/duibidu_l"
+		        android:layout_marginTop="10dp"
+		        android:id="@+id/liangdu_l" /> 
+		    <Button android:layout_width="wrap_content"  
+		        android:layout_height="wrap_content" 
+		        android:layout_below="@id/liangdu"
+		        android:layout_margin="10dp"
+		        android:paddingTop="5dp"
+		        android:minHeight="0dp"
+		        android:minWidth="0dp"
+		        android:background="@drawable/img_btn_ok"
+		        android:id="@+id/btn_pp_Ok" /> 
+		   <Button android:layout_width="wrap_content"  
+		        android:layout_height="wrap_content" 
+		        android:layout_below="@id/liangdu"
+		        android:minHeight="0dp"
+		        android:minWidth="0dp"
+		        android:layout_margin="10dp"
+		        android:layout_marginLeft="15dp"
+		        android:paddingTop="5dp"
+		        android:layout_toRightOf="@id/btn_pp_Ok"
+		        android:background="@drawable/img_btn_cancel"
+		        android:id="@+id/btn_pp_cancel" /> 
+	</RelativeLayout>
+	  
+    </FrameLayout>
+	
+    
+
+  </LinearLayout>      
+<LinearLayout
+    android:id="@+id/item_right"
+    android:layout_width="100dp"
+    android:layout_height="fill_parent"
+    android:layout_toRightOf="@id/item_left"
+    android:focusable="true"  
+   android:focusableInTouchMode="true"
+    android:orientation="vertical" >
+ <Spinner
+        android:id="@+id/spinner_unit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+        android:layout_margin="2dp"/>
+ <EditText
+        android:id="@+id/find_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_edittext"  
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="5dp"
+        android:padding="5dp"
+        android:textColorHint="#AAAAAA"  
+        android:singleLine="true"  
+        android:textSize="16sp"
+        >
+    </EditText>
+
+ 
+    <ListView
+        android:id="@+id/lvStudentList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+    </ListView>
+</LinearLayout>
+    
+</LinearLayout>
+
+<!-- 5秒提示 -->  
+<LinearLayout
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#66000000"
+    android:id="@+id/layout_tip"
+    android:visibility="gone"
+    android:gravity="center_vertical|center_horizontal"
+    >
+    <TextView 
+        android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:textSize="25sp"
+	    android:textColor="#ff0000"
+	    android:id="@+id/tv_tip"
+        />
+</LinearLayout> 
+
+
+</FrameLayout>

@@ -1,0 +1,33 @@
+# view res/layout/activity_main.xml #generated:25
+# view res/layout/activity_main_linearlayout.xml #generated:25
+-keep class com.lqd.camera.DrawRectImageView { <init>(...); }
+
+# view AndroidManifest.xml #generated:28
+-keep class com.lqd.camera.HelpActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:17
+-keep class com.lqd.camera.MainActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:27
+-keep class com.lqd.camera.SetupActivity { <init>(...); }
+
+# onClick res/layout/activity_main.xml #generated:59
+# onClick res/layout/activity_main_linearlayout.xml #generated:59
+-keepclassmembers class * { *** btnGetPhotoClick(...); }
+
+# onClick res/layout/activity_main.xml #generated:83
+# onClick res/layout/activity_main_linearlayout.xml #generated:83
+-keepclassmembers class * { *** btnNextClick(...); }
+
+# onClick res/layout/activity_main.xml #generated:77
+# onClick res/layout/activity_main_linearlayout.xml #generated:77
+-keepclassmembers class * { *** btnPriorClick(...); }
+
+# onClick res/layout/activity_main.xml #generated:110
+# onClick res/layout/activity_main_linearlayout.xml #generated:110
+-keepclassmembers class * { *** eyeClick(...); }
+
+# onClick res/layout/activity_main.xml #generated:99
+# onClick res/layout/activity_main_linearlayout.xml #generated:99
+-keepclassmembers class * { *** sgdClick(...); }
+
